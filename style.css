@@ -1,3 +1,49 @@
-body{
-    background-color: aqua;
+.time{
+   color: antiquewhite;
+   text-overflow: ellipsis;
 }
+button{
+    border-radius: 5em;
+    border: none;
+    padding: 1em;
+    margin:1em
+}
+img{
+    width: 29em;
+    height: 28em;
+    margin-bottom: -8em;
+}
+
+button:hover{
+    border: 5px solid rgb(42, 47, 59) ; 
+}
+.warningStop{
+    color: rgb(0, 5, 5);
+}
+.background{
+    animation: wheelHueColor 100s infinite;
+    background-color: hsl(0, 77%, 53%);
+    text-align: center;
+    min-height: 100vh;
+    margin: auto;
+
+}
+@supports (background-blend-mode: overlay){
+    .background{
+        background-image: linear-gradient(45deg, white 10%, black 90%);
+        background-blend-mode: overlay;
+    }
+}
+@keyframes wheelHueColor {
+    from, to { background-color: hsl(358, 25%, 60%); }
+    5%       { background-color: hsl(322, 50%, 60%); }
+    20%      { background-color: hsl(271, 68%, 53%); }
+    30%      { background-color: hsl(255, 79%, 50%); }
+    40%      { background-color: hsl(216, 100%, 51%); }
+    50%      { background-color: hsl(188, 71%, 72%); }
+    60%      { background-color: hsl(186, 79%, 41%); }
+    70%      { background-color: hsl(115, 48%, 54%); }
+    80%      { background-color: hsl(80, 71%, 55%); }
+    90%      { background-color: hsl(35, 73%, 53%); }
+  }
+
